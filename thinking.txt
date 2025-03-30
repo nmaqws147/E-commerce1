@@ -1,0 +1,3 @@
+
+when i click on add to cart "addCartComponent" the count "addCartCount" + 1 but when click on it again dont increase the count again
+How i can do it ? 
