@@ -19,5 +19,5 @@ export default function Side(props){
             </div>
         </div>
         </>
-    )
+    );
 }

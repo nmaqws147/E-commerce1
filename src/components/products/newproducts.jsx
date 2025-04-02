@@ -2,8 +2,8 @@
 export default function NewProducts(props){
     const newproductId = [4,5,13,15];
     const filterNewProducts = props.products.filter(newProduct => {
-        return newproductId.includes(newProduct.id)
-    })
+        return newproductId.includes(newProduct.id);
+    });
     return(
         <div>
             <div className="newProducts-card">
@@ -16,9 +16,9 @@ export default function NewProducts(props){
                     <p className="newProducts-price">{`Price: $${newProduct.price}`}</p>
                     <p className="newProducts-count">{`Count: ${newProduct.rating.count}`}</p>
                     </div>
-                )
+                );
             })}
             </div>
         </div>
-    )
+    );
 }
