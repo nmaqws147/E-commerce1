@@ -2,6 +2,7 @@
   "name": "reactfirst",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nmaqws147.github.io/E-commerce1",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
@@ -15,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +41,7 @@
     "@eslint/js": "^9.23.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.4",
+    "gh-pages": "^6.3.0",
     "globals": "^16.0.0"
   }
 }
