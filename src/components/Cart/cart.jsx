@@ -14,8 +14,10 @@ export default function Cart(props) {
                 }
                   }>
                   <img src={cart.image} alt={cart.title} className="cart-img" />
+                  <div className="product-content">
                   <p className="cart-category">{cart.category}</p>
                   <p className="cart-price">{`Price: $${cart.price}`}</p>
+                  </div>
                   <p className="cart-count">{`Count: ${cart.rating.count}`}</p>
                   <button className="remove-btn" onClick={e => {
                     e.stopPropagation();

@@ -163,11 +163,11 @@ export default function App() {
       />
       {
         !email 
-        ? <span className="hint">Enter your email</span>
+        ? <span className="hint"></span>
         : email.length < 5 
-        ? <span className="warning">Too Short</span>
+        ? <span className="warning">Short</span>
         : !email.includes("@")
-        ? <span className="warning">Missing @ sympol</span>
+        ? <span className="warning">@</span>
         : /^\w+@(gmail|com|yahoo|outlook)\.(com|org|edu|sa)$/.test(email)
         ? <img src={Correct} alt="correct" className="validation"/>
         : <img src={Incorrect} alt="incorrect" className="validation" />
@@ -187,9 +187,9 @@ export default function App() {
       />
       {
         !nameOnCard 
-        ? <span className="hint-nameof-card">Name on card</span>
+        ? <span className="hint-nameof-card"></span>
         : nameOnCard.length < 5 
-        ? <span className="warning-nameof-card">Too Short</span>
+        ? <span className="warning-nameof-card">Short</span>
         : /^[A-z']+(?:[ .'&-/][A-z']+)*$/.test(nameOnCard)
         ? <img src={Correct} alt="correct" className="validation-nameof-card"/>
         : <img src={Incorrect} alt="incorrect" className="validation-nameof-card" />
@@ -209,9 +209,9 @@ export default function App() {
           />
       {
         !phoneNumber 
-        ? <span className="hint-phone">Enter your phone number</span>
+        ? <span className="hint-phone"></span>
         : phoneNumber.length < 4 
-        ? <span className="warning-phone">Too Short</span>
+        ? <span className="warning-phone">Short</span>
         : /^\d{16}$/.test(phoneNumber)
         ? <img src={Correct} alt="correct" className="validation-phone"/>
         : <img src={Incorrect} alt="incorrect" className="validation-phone" />

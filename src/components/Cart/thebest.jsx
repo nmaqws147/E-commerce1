@@ -12,10 +12,12 @@ export default function Thebest(props) {
                   alt={thebest.title} 
                   className="thebest-img"
                 />
+                <div className="product-content">
                 <h3 className="thebest-category">{thebest.category}</h3>
                 <p className="thebest-price">
                   {`Price: $${thebest.price}`}
                 </p>
+                </div>
                 <p className="thebest-count">
                   {`Count: ${thebest.rating.count}`}
                 </p>

@@ -216,7 +216,14 @@ header {
   font-weight: 600;
 }
 
-.product-count,
+.product-count{
+  font-size: 0.6rem;
+  margin-left: 200px;
+  margin-right: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #555555cc;
+}
 .filtered-count,
 .thebest-count,
 .cart-count {
@@ -316,37 +323,22 @@ header {
   .cart-count {
     margin-left: auto;
     font-size: 0.6rem;
+    margin-top: 70px;
+    margin-right: 5px;
   }
+  .products-price,
+.filtered-price,
+.newProducts-price,
+.thebest-price,
+.cart-price {
+  display: flex;
+  font-size: 0.7rem;
+  color: #555;
+  font-weight: 600;
 }
 
-@media (max-width: 480px) {
-  .product-card,
-  .thebest-card,
-  .cart-card {
-    padding: 10px;
-    height: auto;
-  }
-  .product-category,
-  .filtered-cate,
-  .deal-category,
-  .thebest-category,
-  .cart-category {
-    font-size: 0.8rem;
-  }
-  .product-title,
-  .thebest-title {
-    font-size: 0.65rem;
-  }
-  .product-count,
-  .filtered-count,
-  .thebest-count,
-  .cart-count {
-    font-size: 0.55rem;
-  }
-  .cate {
-    gap: 40px;
-  }
 }
+
 /* End Products */
 
 /*Start categories*/
@@ -449,33 +441,41 @@ header {
 }
 
 /* ========== The Best Section ========== */
+.cart-container,
 .thebest-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 15px;
   padding: 10px;
   width: 100%;
-  max-width: 1000px;
+  min-width: 200px;
 }
 
+.cart-card,
 .product-card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  padding: 15px;
+  padding: 1px;
   text-align: center;
   width: 100%;
-  max-width: 260px;
+  
   cursor: pointer;
   transition: 0.2s ease all;
-  margin: auto;
 }
-
+.product-card{
+  max-width: 300px;
+}
+.cart-card{
+  max-width: 300px;
+}
+.cart-card:hover,
 .product-card:hover {
   transform: translateY(-4px);
 }
 
+.cart-img,
 .thebest-img {
   width: 60px;
   height: 80px;
@@ -483,18 +483,21 @@ header {
   margin-bottom: 10px;
 }
 
+.cart-category,
 .thebest-category {
   font-size: 0.85rem;
   font-weight: bold;
   color: #333;
 }
 
+.cart-price,
 .thebest-price {
   font-size: 0.8rem;
   color: #444;
   margin: 5px 0;
 }
 
+.cart-count,
 .thebest-count {
   font-size: 0.75rem;
   color: #777;
@@ -1428,8 +1431,8 @@ background-color: #d80a0a;
     }
     .order-card .order-price{
       position: absolute;
-      left: 10%;
-      bottom: 70%;
+      left: 5%;
+      bottom: 60%;
     }
 }
 /*End checkout*/
